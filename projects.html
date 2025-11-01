@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haoyuan Yin | Projects</title>
+    <link rel="stylesheet" href="css/layout-v1.css" />
+  </head>
+  <body class="page-projects">
+    <header class="site-header">
+      <div class="logo">HY</div>
+      <nav class="site-nav">
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <h1>Projects</h1>
+        <p>
+          Selected research collaborations and independent initiatives exploring physics-informed machine intelligence, ocean biogeochemistry, and immersive interactive systems.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <div class="section-header">
+          <span>Research Projects</span>
+          <p>Collaborative academic work with formal supervision.</p>
+        </div>
+        <div class="project-cards">
+          <article class="project-card">
+            <div class="card-meta">
+              <span class="label">Active</span>
+              <span class="role">Research Assistant</span>
+            </div>
+            <h2>Unsupervised Classification of Global Dissolved Inorganic Carbon Profiles</h2>
+            <p class="project-context">
+              Department of Applied Mathematics, University of Waterloo. Supervised by Dr. Barbara Zemskova.
+            </p>
+            <p>
+              Overview: Unsupervised classification of global dissolved inorganic carbon (DIC) profiles using Gaussian Mixture Models (GMM) on ECCO-Darwin data, revealing large-scale carbon storage regimes linked to ocean circulation patterns.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Tastal/DIC-Clustering" target="_blank" rel="noreferrer">Repository</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="section-header">
+          <span>Side Projects</span>
+          <p>Independent or collaborative experiments outside formal coursework.</p>
+        </div>
+        <div class="project-cards">
+          <article class="project-card">
+            <div class="card-meta">
+              <span class="label">Independent</span>
+              <span class="role">Creator</span>
+            </div>
+            <h2>CSProfAlign</h2>
+            <p class="project-context">Personal development initiative</p>
+            <p>
+              Overview: An AI-powered matching tool that helps prospective students find computer science professors whose research interests align with theirs, using data from CSRankings and DBLP.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Tastal/CSProfAlign" target="_blank" rel="noreferrer">Repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-meta">
+              <span class="label">Collaboration</span>
+              <span class="role">Web &amp; VR Developer</span>
+            </div>
+            <h2>FoA (Fall of Artica)</h2>
+            <p class="project-context">Artivition Projects × Encore Lab, University of Toronto</p>
+            <p>
+              Overview: Fall of Artica is an interdisciplinary game-based learning project integrating dystopian storytelling, interactive media, and generative AI technologies to bridge art, science, and education.
+            </p>
+            <div class="project-links">
+              <a href="https://foagame.org/" target="_blank" rel="noreferrer">Website</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Haoyuan Yin. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const yearElement = document.getElementById("year");
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
+
