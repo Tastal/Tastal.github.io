@@ -17,12 +17,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: var(--fg);
   background: var(--bg);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -102,6 +109,7 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 96px 32px 72px;
+  flex: 1;
 }
 
 /* Asymmetric hero layout */
@@ -471,9 +479,14 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 32px;
-  text-align: right;
+  width: 100%;
+  text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
 }
 
 /* Responsive adjustments */
