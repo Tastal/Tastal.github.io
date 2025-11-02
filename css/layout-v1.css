@@ -61,16 +61,18 @@ img {
 
 /* Header */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   padding: 16px 32px;
   border-bottom: 1px solid var(--line);
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
@@ -115,6 +117,7 @@ main {
   margin: 0 auto;
   padding: 96px 32px 72px;
   flex: 1;
+  margin-top: 70px;
 }
 
 /* Single-page sections */
@@ -468,6 +471,9 @@ section[id] {
   border: 1px solid var(--accent);
   color: var(--accent);
   transition: background var(--transition), color var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .project-links a:hover {
