@@ -17,11 +17,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-}
-
 html,
 body {
   height: 100%;
@@ -115,16 +110,6 @@ main {
   margin: 0 auto;
   padding: 96px 32px 72px;
   flex: 1;
-}
-
-/* Single-page sections */
-section[id] {
-  scroll-margin-top: 80px;
-}
-
-#publications,
-#projects {
-  margin-top: 96px;
 }
 
 /* Asymmetric hero layout */
@@ -325,6 +310,10 @@ section[id] {
 }
 
 /* Publications layout */
+.page-publications main {
+  padding-top: 120px;
+}
+
 .page-intro {
   margin-bottom: 48px;
   border-left: 6px solid var(--accent);
@@ -335,6 +324,12 @@ section[id] {
   margin: 0 0 12px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
+}
+
+.page-intro p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
 }
 
 .publication-list {
@@ -368,6 +363,10 @@ section[id] {
 }
 
 /* Projects layout */
+.page-projects main {
+  padding-top: 120px;
+}
+
 .project-section {
   margin-bottom: 64px;
 }
